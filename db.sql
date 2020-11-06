@@ -86,3 +86,25 @@ FROM test_ori AS A
 #WHERE DATE_FORMAT(A.reg_date, "%Y-%m") >= "2017-04" 
 GROUP BY C_DATE_YM, P_DATE_YM HAVING C_SUM_USER_BASE > 1 ORDER BY C_DATE_YM
 ;
+
+
+
+
+
+
+
+CREATE TABLE `depth` (
+  `input_01` int NOT NULL,
+  `input_02` int NOT NULL,
+  `input_03` int NOT NULL,
+  `input_04` int NOT NULL,
+  `input_05` double NOT NULL,
+  `input_06` double NOT NULL,
+  `input_07` int NOT NULL,
+  `input_08` int NOT NULL,
+  `input_09` int NOT NULL,
+  `input_10` int NOT NULL,
+ 
+  `result_ratio` double NOT NULL,
+  `amount` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
