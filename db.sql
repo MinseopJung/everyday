@@ -108,3 +108,10 @@ CREATE TABLE `depth` (
   `result_ratio` double NOT NULL,
   `amount` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+SELECT * FROM depth ORDER BY result_ratio, amount DESC LIMIT 100;
+
+SELECT AVG(result_ration) WHERE depth;
+
