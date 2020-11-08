@@ -100,11 +100,9 @@ CREATE TABLE `depth` (
   `input_04` int NOT NULL,
   `input_05` double NOT NULL,
   `input_06` double NOT NULL,
-  `input_07` int NOT NULL,
-  `input_08` int NOT NULL,
-  `input_09` int NOT NULL,
-  `input_10` int NOT NULL,
- 
+  `input_07` double NOT NULL,
+
+  `need_time` int NOT NULL,  
   `result_ratio` double NOT NULL,
   `amount` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -112,6 +110,6 @@ CREATE TABLE `depth` (
 
 
 SELECT * FROM depth ORDER BY result_ratio, amount DESC LIMIT 100;
-
 SELECT AVG(result_ration) WHERE depth;
+SELECT AVG(need_time) WHERE depth;
 
