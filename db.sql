@@ -109,7 +109,10 @@ CREATE TABLE `depth` (
 
 
 
-SELECT * FROM depth ORDER BY result_ratio, amount DESC LIMIT 100;
-SELECT AVG(result_ration) WHERE depth;
-SELECT AVG(need_time) WHERE depth;
+
+
+SELECT SUM(inpit_02) FROM depth WHERE input_01 > 100 And input_03 = 100;
+
+
+SELECT d.* FROM depth d INNER JOIN result r WHERE d.input_04 = 95;
 
